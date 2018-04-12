@@ -34,11 +34,11 @@ public class ViewHolder extends RecyclerView.ViewHolder {
 
         RatesByDate rates = currency.getRatesByDate().get(0);
 
-        title.setText(currency.getCode() + " " + currency.getDescription());
+        title.setText(currency.getCode() + " | " + currency.getDescription());
         timeStamp.setText(rates.getDate().substring(0, rates.getDate().indexOf('T')));
         description1.setText(rates.getCurrencyRates().get(0).getCode() + " | " + rates.getCurrencyRates().get(0).getDescription());
         info1.setText("Sell rate: " + rates.getCurrencyRates().get(0).getSellRate() + " | Buy rate: " + rates.getCurrencyRates().get(0).getBuyRate());
-        description2.setText(rates.getCurrencyRates().get(1).getCode() + " " + rates.getCurrencyRates().get(1).getDescription());
+        description2.setText(rates.getCurrencyRates().get(1).getCode() + " | " + rates.getCurrencyRates().get(1).getDescription());
         info2.setText("Rate: " + rates.getCurrencyRates().get(1).getRate());
     }
 
