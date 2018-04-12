@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -68,7 +69,8 @@ public class MainActivity extends AppCompatActivity implements Callback<Currency
 
     @Override
     public void onFailure(Call<CurrencyData> call, Throwable t) {
-
+        Toast.makeText(this, "Connection error, try again!", Toast.LENGTH_SHORT).show();
+        mFetchButton.setVisibility(View.VISIBLE);
     }
 
     void makeACall() {
