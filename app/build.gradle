@@ -23,8 +23,6 @@ android {
 def verRetrofit = '2.4.0'
 def verOkHttp = '3.10.0'
 def verGson = '2.8.2'
-def verRxJava = '2.1.12'
-def verRxAndroid = '2.0.2'
 def verRecycler = '27.1.1'
 def verLombok = '1.16.20'
 def verKnife = '8.8.1'
