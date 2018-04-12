@@ -37,15 +37,10 @@ dependencies {
     implementation "com.android.support:recyclerview-v7:$verRecycler"
 
     implementation "com.squareup.retrofit2:retrofit:$verRetrofit"
-    implementation "com.squareup.retrofit2:converter-gson:$verRetrofit"
-    implementation "com.squareup.retrofit2:adapter-rxjava2:$verRetrofit"
 
     implementation "com.squareup.okhttp3:logging-interceptor:$verOkHttp"
 
     implementation "com.google.code.gson:gson:$verGson"
-
-    implementation "io.reactivex.rxjava2:rxjava:$verRxJava"
-    implementation "io.reactivex.rxjava2:rxandroid:$verRxAndroid"
 
     implementation "org.projectlombok:lombok:$verLombok"
     annotationProcessor "org.projectlombok:lombok:$verLombok"
