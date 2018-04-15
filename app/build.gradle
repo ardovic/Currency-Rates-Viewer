@@ -26,6 +26,7 @@ def verGson = '2.8.2'
 def verRecycler = '27.1.1'
 def verLombok = '1.16.20'
 def verKnife = '8.8.1'
+def verDagger = '2.15'
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
@@ -46,4 +47,7 @@ dependencies {
 
     implementation "com.jakewharton:butterknife:$verKnife"
     annotationProcessor "com.jakewharton:butterknife-compiler:$verKnife"
+
+    implementation "com.google.dagger:dagger:$verDagger"
+    annotationProcessor "com.google.dagger:dagger-compiler:$verDagger"
 }
