@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_marginTop="?actionBarSize"
+        android:layout_height="match_parent"/>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_actionbar"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        app:theme="@style/ToolBarStyle"
+        android:layout_height="?actionBarSize"
+        android:fitsSystemWindows="true">
+
+        <Button
+            android:id="@+id/toolbar_fetch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:theme="@style/AppTheme.Button"
+            android:text="Fetch"
+            android:visibility="gone"
+            android:layout_gravity="end"/>
+
+    </android.support.v7.widget.Toolbar>
+
+</RelativeLayout>
